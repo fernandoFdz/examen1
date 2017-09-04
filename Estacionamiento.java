@@ -1,3 +1,4 @@
+import java.until.arrayList; 
 
 
 public class Estacionamiento{
@@ -12,23 +13,30 @@ public class Estacionamiento{
         placas=null;
         //Autos= arrayList<Auto> [150];
     }    
+
     
     public boolean Guarda(Auto Automovil){
-        for(int i=0;i<Autos.length;i++){
-            
-        }
-            
+       
+       if(busca(placas)==1){
+           return false;
+            }
+       else return true;
+                   
     }
     
     /**
-     * falso si aun tiene espacio true si esta lleno
+     * 0 si aun tiene espacio 1 si esta lleno
      */
     public int busca(String placas){
         for(int i=0;i<Autos.lenght;i++){
             if(Autos[i]==null)
-                return false;
-            else return true;//
+                return 0;
+            else return 1;//
                 
         }
+    }
+    
+    public void sale(String BuscaPlaca){
+        
     }
 }
